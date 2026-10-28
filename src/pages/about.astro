@@ -12,6 +12,8 @@ const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Next"];
 const happy = true;
 const finished = false;
 const goal = 3;
+
+import Header from "../components/Header";
 ---
 
 <html lang="fr">
@@ -90,22 +92,10 @@ const goal = 3;
     <meta name="theme-color" content="#ffffff" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>{titlePage}</title>
+    <title>A propos</title>
   </head>
   <body>
-    <header>
-      <h1>{titlePage}</h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="/"> Accueil </a>
-          </li>
-          <li>
-            <a href="/blog/"> Blog </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <Header title="A propos" />
     <section>
       <h2>Ma présentation</h2>
       <p>

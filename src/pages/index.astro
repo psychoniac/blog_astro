@@ -1,5 +1,5 @@
 ---
-const titlePage = "Homepage";
+import Header from "../components/Header";
 ---
 
 <html lang="fr">
@@ -78,22 +78,10 @@ const titlePage = "Homepage";
     <meta name="theme-color" content="#ffffff" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>{titlePage}</title>
+    <title>Home</title>
   </head>
   <body>
-    <header>
-      <h1>{titlePage}</h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="/blog/"> Blog </a>
-          </li>
-          <li>
-            <a href="/about/"> A propos </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <Header title="home" />
     <footer>
       <div>
         <h4>Le blog de Jlnko</h4>
