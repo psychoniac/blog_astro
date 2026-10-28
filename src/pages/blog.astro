@@ -1,82 +1,165 @@
 ---
+const titlePage = "Mes articles";
 ---
 
 <html lang="fr">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Mes articles</title>
-	</head>
-	<body>
-		<header>
-			<h1>Blog de Jlnko</h1>
-			<nav>
-                <ul>
-                    <li>
-                        <a href="/">Accueil</a>
-                    </li>
-                    <li>
-                        <a href="/about/">A propos</a>
-                    </li>
-                </ul>
-            </nav>
-		</header>
-        <section>
-            <h2>Mes derniers articles</h2>
-            <div>
-                <div id="card_article">
-                    <h3>Titre de l'article</h3>
-                    <img src="#" alt="illustration pour l'article">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel similique tempore consequatur totam voluptate quaerat iste doloribus blanditiis, fugit quis maiores provident non nihil neque reiciendis voluptatibus, iure velit accusantium.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, est veniam? Nobis hic eum mollitia quisquam dolores consequatur commodi reprehenderit doloribus voluptatum consequuntur rem eveniet, sit quia facere optio dignissimos!
-                    </p>
-                    <span>Catégorie de l'article</span>
-                </div>
-                <div id="card_article">
-                    <h3>Titre de l'article</h3>
-                    <img src="#" alt="illustration pour l'article">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel similique tempore consequatur totam voluptate quaerat iste doloribus blanditiis, fugit quis maiores provident non nihil neque reiciendis voluptatibus, iure velit accusantium.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, est veniam? Nobis hic eum mollitia quisquam dolores consequatur commodi reprehenderit doloribus voluptatum consequuntur rem eveniet, sit quia facere optio dignissimos!
-                    </p>
-                    <span>Catégorie de l'article</span>
-                </div>
-                <div id="card_article">
-                    <h3>Titre de l'article</h3>
-                    <img src="#" alt="illustration pour l'article">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel similique tempore consequatur totam voluptate quaerat iste doloribus blanditiis, fugit quis maiores provident non nihil neque reiciendis voluptatibus, iure velit accusantium.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, est veniam? Nobis hic eum mollitia quisquam dolores consequatur commodi reprehenderit doloribus voluptatum consequuntur rem eveniet, sit quia facere optio dignissimos!
-                    </p>
-                    <span>Catégorie de l'article</span>
-                </div>
-            </div>
-        </section>
-        <footer>
-            <div>
-                <h4>Le blog de Jlnko</h4>
-                <span>Copyright 2026</span>
-            </div>
-            <div>
-                <span>Futur place pour logo</span>
-            </div>
-            <div>
-                <ul>
-                    <li>Instagram</li>
-                    <li>X</li>
-                    <li>Linkedin</li>
-                </ul>
-            </div>
-        </footer>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicons/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/favicons/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/favicons/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/favicons/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/favicons/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/favicons/apple-touch-icon-96x96.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/favicons/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/favicons/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/favicons/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/favicons/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicons/apple-touch-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/favicons/android-icon-192x192.png"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{titlePage}</title>
+  </head>
+  <body>
+    <header>
+      <h1>{titlePage}</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="/">Accueil</a>
+          </li>
+          <li>
+            <a href="/about/">A propos</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <h2>Mes derniers articles</h2>
+      <div>
+        <div id="card_article">
+          <h3>Titre de l'article</h3>
+          <img src="#" alt="illustration pour l'article" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+            similique tempore consequatur totam voluptate quaerat iste doloribus
+            blanditiis, fugit quis maiores provident non nihil neque reiciendis
+            voluptatibus, iure velit accusantium.
+          </p>
+          <span>Catégorie de l'article</span>
+          <a href="/posts/post-1/">Lien vers l'article</a>
+        </div>
+        <div id="card_article">
+          <h3>Titre de l'article</h3>
+          <img src="#" alt="illustration pour l'article" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+            similique tempore consequatur totam voluptate quaerat iste doloribus
+            blanditiis, fugit quis maiores provident non nihil neque reiciendis
+            voluptatibus, iure velit accusantium.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+            est veniam? Nobis hic eum mollitia quisquam dolores consequatur
+            commodi reprehenderit doloribus voluptatum consequuntur rem eveniet,
+            sit quia facere optio dignissimos!
+          </p>
+          <span>Catégorie de l'article</span>
+        </div>
+        <div id="card_article">
+          <h3>Titre de l'article</h3>
+          <img src="#" alt="illustration pour l'article" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+            similique tempore consequatur totam voluptate quaerat iste doloribus
+            blanditiis, fugit quis maiores provident non nihil neque reiciendis
+            voluptatibus, iure velit accusantium.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+            est veniam? Nobis hic eum mollitia quisquam dolores consequatur
+            commodi reprehenderit doloribus voluptatum consequuntur rem eveniet,
+            sit quia facere optio dignissimos!
+          </p>
+          <span>Catégorie de l'article</span>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <h4>Le blog de Jlnko</h4>
+        <span>Copyright 2026</span>
+      </div>
+      <div>
+        <span>Futur place pour logo</span>
+      </div>
+      <div>
+        <ul>
+          <li>Instagram</li>
+          <li>X</li>
+          <li>Linkedin</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
